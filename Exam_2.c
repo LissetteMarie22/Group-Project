@@ -1,6 +1,6 @@
 /*
 EXAM 2
-BY; James Baker, Lissette Ramos, Pablo Colon Teissonniere
+By: James Baker, Lissette Ramos, and Pablo Colon Teissonniere
 */
 
 #include <stdio.h>
@@ -45,11 +45,7 @@ int main() {
 
 		case 1:
 
-			/*
-			Dice rolling program. Rolls 2 6 sided die, and prints the result:
-			Author: James Baker
-			Date: 06/23/17
-			*/
+			//By James Baker
 
 			printf("-----------------------------------\n");
 			printf("----DECIMAL TO BINARY CONVERTER----\n");
@@ -251,28 +247,19 @@ int main() {
 		case 3:
 			/* Programmed by: Lissette Ramos
 			Programmed on: June 23, 2017
-			Program's Intentions: To list the prime numbers from 1 to 100*/
-			// Represents any given number from 1 to 100.
-
+			Program's Intentions: To list the prime numbers from 1 to 100
+			*/
 			printf("--------------------------------------------------\n");
 			printf("----------Find Prime Numbers from 1 - 100---------\n");
 			printf("--------------------------------------------------\n");
-
-			for (k = 2; k <= 10; k++) {
-
-				if (k == 2 || k % 2 != 0) {
-
-					printf("%d \n", k);
+                        for (k = 2; k <= 10; k++) {
+                        if (k == 2 || k % 2 != 0) {
+                        printf("%d \n", k);
 				}
 			}
-
-			for (k = 2; k <= 100; k++) {
-
-
-
-				if (k % 2 != 0 && k % 3 != 0 && k % 5 != 0 && k % 7 != 0) {
-
-					printf("%d  \n", k);
+			   for (k = 2; k <= 100; k++) {
+                               if (k % 2 != 0 && k % 3 != 0 && k % 5 != 0 && k % 7 != 0) {
+                                   printf("%d  \n", k);
 				}
 
 			}
@@ -303,22 +290,16 @@ int main() {
 			printf("------------------------------------------------- \n");
 			printf("-------------------How Far Can You Go?-----------\n");
 			printf("----------------------------------------------------\n");
-
-			/*Programmed by Lissette Ramos with help from Pablo J Colon
+                        /*Programmed by Lissette Ramos with help from Pablo J Colon
 			On June 23, 2017
-			Code Purpouse: Tell someone how far they can go given their car's mpg, how much gas is, and how much money they have.*/
-
-
-			printf("I will tell you how far you can go based on how much money you have currently, given your cars' mph average, and how much a gallon of gas costs for you. So first off, what is your cars' average MPG?");
+			Code Purpose: Tell someone how far they can go given their car's mpg, how much gas is, and how much money they have.*/
+                        printf("I will tell you how far you can go based on how much money you have currently, given your cars' mph average, and how much a gallon of gas costs for you. So first off, what is your cars' average MPG?");
 			scanf("%d", &averageMiles);
-
-			printf("Nice! OK, how much do you need to pay for a gallon of gas where you live?");
+                        printf("Nice! OK, how much do you need to pay for a gallon of gas where you live?");
 			scanf("%lf", &gasPrice);
 
 			printf("Cool, and how much money do you have now?");
-			scanf("%lf", &currentMoney);
-
-			while (carGallons > 0) {
+			scanf("%lf", &currentMoney);while (carGallons > 0) {
 				carGallons = carGallons - 1;
 				milesTraveled = milesTraveled + averageMiles;
 				if (carGallons == 0 && currentMoney > 0) {
@@ -379,8 +360,7 @@ int main() {
 		case 5:
 			/* Programmed by Pablo J Colon
 			Last Revision: June 24th, 2017*/
-
-			//Variable Declarations
+                        //Variable Declarations
 
 			//Introductions and data input
 
@@ -446,11 +426,7 @@ int main() {
 
 		default:
 			printf("Sorry, but that was not an option; Please enter one of our choices. Type any number between 1 and 6.");
-
-
-
-			system("pause");
+                system("pause");
 		}
-
-	}while (iResponse != 6);
+          }while (iResponse != 6);
 }
